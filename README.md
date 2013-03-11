@@ -1,6 +1,8 @@
 tinygrowl
 =========
 
+<a href="http://cdpn.io/AyDtJ">Demo</a>
+
 A very small js file for creating simple growl messages.
 Just use this with jquery and you're good.
 
