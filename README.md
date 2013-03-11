@@ -24,4 +24,4 @@ Declare the second parameter in milliseconds. Omitted, the default is 1000ms (1 
 Use HTML
 --------
 
-``new growl('<strong>Success</strong><br />Your request was completed successfully.')``
+``new growl('<strong>Success</strong><p>Your request was completed successfully.</p>')``
