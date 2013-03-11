@@ -20,3 +20,8 @@ Set delay
 Declare the second parameter in milliseconds. Omitted, the default is 1000ms (1 second)
 
 ``new growl('Hello world!', 2000)``
+
+Use HTML
+--------
+
+``new growl('<strong>Success</strong><br />Your request was completed successfully.')
