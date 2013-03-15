@@ -38,24 +38,24 @@ This div will be where the growl will populate
 By default, it will occupy 100% of the width, so we'll put all the styling on this container.
 
     <style>
-	    .customContainer {
-			  border: 1px solid black;
-			  width: 300px;
-			  height: 200px;
-			}
-		</style>
+      .customContainer {
+        border: 1px solid black;
+        width: 300px;
+        height: 200px;
+      }
+    </style>
 
 Now we call ``$.growl`` and specify the ``container`` attribute. Remember to format this as you would in CSS. writing ``customContainer`` would append to ``<customContainer>`` instead of ``<div class="customContainer"></div>``
 
-		$('a#custom').click(function() {
-		  $.growl({
-		    title: 'I\'ll hang out'
-		    , text: '...but just for a couple seconds'
-		    , type: 'info'
-		    , delay: 2000
-		    , container: '.customContainer'
-		  })
-		})
+    $('a#custom').click(function() {
+      $.growl({
+        title: 'I\'ll hang out'
+        , text: '...but just for a couple seconds'
+        , type: 'info'
+        , delay: 2000
+        , container: '.customContainer'
+      })
+    })
 
 Use HTML
 --------
@@ -66,7 +66,7 @@ Text and title also accept HTML
       title: 'Success'
       , text: 'Your request was completed <em>successfully</em>.'
       , delay: 2000 
-    })``
+    })
 
 Works great with icons
 
@@ -74,7 +74,7 @@ Works great with icons
       title: 'Success'
       , text: '<span class="glyphicon-book"></span> Entry has been added.'
       , delay: 500 
-    })``
+    })
 
 Handling Overflow
 -----------------
