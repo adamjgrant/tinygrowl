@@ -5,13 +5,25 @@ tinygrowl
 
 A very small (~0.7kb minified) js file for creating simple growl messages in Bootstrap.
 
+Install
+=======
+
+All you need is the default Bootstrap dependencies and tinygrowl.
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="tinygrowl.min.js"></script>
+
+    <script> $.growl({ text: 'Testing.' }) </script>
+
 Usage
 =====
 
 Create a growl message
 ----------------------
 
-``$.growl({text: 'Hello world!'})``
+``$.growl({ text: 'Hello world!' })``
 
 Optional parameters
 -------------------
