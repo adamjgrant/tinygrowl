@@ -11,7 +11,7 @@ Usage
 Create a growl message
 ----------------------
 
-``new growl({text: 'Hello world!'})``
+``$.growl({text: 'Hello world!'})``
 
 Optional parameters
 -------------------
@@ -22,7 +22,31 @@ Optional parameters
 ``delay``: When to fade out alert (default is ``0`` and will is instead
 dismissable)
 
+Dismissable
+^^^^^^^^^^^
+
+If a delay is not set, it defaults to zero, which makes the growl dismissable via an "x"
+
+    $.growl({
+    	title: 'Try again'
+    	, text: 'Sorry, it\'s our fault'
+    })
+
 Use HTML
 --------
 
-``new growl({ title: 'Success', text: 'Your request was completed <em>successfully</em>.', delay: 2000 })``
+Text and title also accept HTML
+
+    $.growl({ 
+      title: 'Success'
+      , text: 'Your request was completed <em>successfully</em>.'
+      , delay: 2000 
+    })``
+
+Works great with icons
+
+    $.growl({ 
+      title: 'Success'
+      , text: '<span class="glyphicon-book"></span> Entry has been added.'
+      , delay: 0 
+    })``
