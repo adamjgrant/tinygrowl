@@ -3,7 +3,7 @@ tinygrowl
 
 <a href="http://codepen.io/ajkochanowicz/pen/bLBfr">Demo</a>
 
-A very small js file for creating simple growl messages in Bootstrap.
+A very small (**~0.7kb minified**) js file for creating simple growl messages in Bootstrap.
 
 Usage
 =====
@@ -33,7 +33,7 @@ Appending to Containers
 
 This div will be where the growl will populate
 
-		<div class="customContainer"></div>
+    <div class="customContainer"></div>
 
 By default, it will occupy 100% of the width, so we'll put all the styling on this container.
 
