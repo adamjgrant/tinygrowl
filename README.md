@@ -3,7 +3,7 @@ tinygrowl
 
 <a href="http://codepen.io/ajkochanowicz/pen/bLBfr">Demo</a>
 
-A very small (**~0.7kb minified**) js file for creating simple growl messages in Bootstrap.
+A very small (~0.7kb minified) js file for creating simple growl messages in Bootstrap.
 
 Usage
 =====
