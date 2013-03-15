@@ -1,5 +1,5 @@
 (function($){  
-  $('body').append('<div id="growlContainer" style="position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;"></div>')
+  $('body').append('<div id="growlContainer" style="position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;z-index:1100"></div>')
   $.extend({
     growl: function(options) {  
 
