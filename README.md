@@ -3,8 +3,7 @@ tinygrowl
 
 <a href="http://cdpn.io/AyDtJ">Demo</a>
 
-A very small js file for creating simple growl messages.
-Just use this with jquery and you're good.
+A very small js file for creating simple growl messages in Bootstrap.
 
 Usage
 =====
@@ -12,16 +11,18 @@ Usage
 Create a growl message
 ----------------------
 
-``new growl('Hello world!')``
+``new growl({text: 'Hello world!'})``
 
-Set delay
----------
+Optional parameters
+-------------------
 
-Declare the second parameter in milliseconds. Omitted, the default is 1000ms (1 second)
-
-``new growl('Hello world!', 2000)``
+``title``: ``<strong>`` formatted title
+``container``: Where to inject the growl message formatted in CSS syntax (default: 'body')
+``type``: type of alert (via bootstrap syntax)
+``delay``: When to fade out alert (default is ``0`` and will is instead
+dismissable)
 
 Use HTML
 --------
 
-``new growl('<strong>Success</strong><p>Your request was completed successfully.</p>')``
+``new growl({ title: 'Success', text: 'Your request was completed <em>successfully</em>.', delay: 2000 })``
