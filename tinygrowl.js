@@ -1,5 +1,5 @@
 (function($){  
-  $('body').append('<div id="growlContainer" style="position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;z-index:1100"></div>')
+  $('body').append('<div id="growlContainer" style="position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;pointer-events:none;"></div>')
   $.extend({
     growl: function(options) {  
 
@@ -36,14 +36,14 @@
       // CREATE FULL DOM OBJECT
       this.html = document.createElement('div')
       this.html.className = 'growl' + this.id + ' alert alert-' + _.type
-      var xHtml = '<a class="close" data-dismiss="alert" href="#">&times;</a>'
+      var xHtml = '<a style="pointer-events: auto;" class="close" data-dismiss="alert" href="#">&times;</a>'
       $(this.html).html( 
         (_.delay == 0 ? xHtml : '') 
         + _.fTitle + ' ' + _.text
       )
 
       // APPEND ALERT TO CONTAINER
-      $(_.container).append(this.html)
+      $(_.container).prepend(this.html)
 
       // SET DELAYS
       if ( _.delay > 0 ) { 
