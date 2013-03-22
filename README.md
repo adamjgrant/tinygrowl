@@ -3,7 +3,7 @@ tinygrowl
 
 <a href="http://codepen.io/ajkochanowicz/pen/bLBfr">Demo</a>
 
-A very small (~0.7kb minified) js file for creating simple growl messages in Bootstrap.
+A very small ( **~0.7kb** minified) js file for creating simple growl messages in Bootstrap.
 
 Install
 =======
@@ -92,3 +92,10 @@ Handling Overflow
 -----------------
 
 Tiny Growl's eloquent way of handling overflowing messages is simply to stick the default, right-aligned container to the top and bottom of the browser and set the ``overflow`` to ``auto``. <a href="http://codepen.io/ajkochanowicz/pen/bLBfr">See the demo</a> for an example.
+
+Removing All Growls
+-------------------
+
+No need to reinvent the wheel here. Just use jQuery's native <code>remove()</code>
+
+    $('[class^="growl"]').remove()
