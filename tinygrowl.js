@@ -24,6 +24,7 @@
         , type: 'warning'
         , container: '#growlContainer'
         , text: ''
+        , class: ''
       };  
       var _ = $.extend(defaults, options);  
 
@@ -35,7 +36,7 @@
 
       // CREATE FULL DOM OBJECT
       this.html = document.createElement('div')
-      this.html.className = 'growl' + this.id + ' alert alert-' + _.type
+      this.html.className = 'growl' + this.id + ' alert alert-' + _.type + ' ' + _.class
       var xHtml = '<a style="pointer-events: auto;" class="close" data-dismiss="alert" href="#">&times;</a>'
       $(this.html).html( 
         (_.delay == 0 ? xHtml : '') 
