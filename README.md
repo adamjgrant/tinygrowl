@@ -32,6 +32,7 @@ Optional parameters
 * ``container``: Where to inject the growl message formatted in CSS syntax (default: 'body')
 * ``type``: type of alert (success/error/info/warning)
 * ``delay``: When to fade out alert (default is ``0``) 
+* ``class``: add a custom class or classes to the growl. 
 
 If a delay is not set, it defaults to zero, which makes the growl dismissable via an "x"
 
