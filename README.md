@@ -97,6 +97,6 @@ Tiny Growl's eloquent way of handling overflowing messages is simply to stick th
 Removing All Growls
 -------------------
 
-No need to reinvent the wheel here. Just use jQuery's native <code>remove()</code>
+No need to reinvent the wheel here. Just use jQuery's native <code>remove()</code> with the <code>growls</code> variable.
 
-    $('[class^="growl"]').remove()
+    $(growls).remove()

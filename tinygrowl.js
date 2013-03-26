@@ -1,3 +1,4 @@
+var growls = '[class^="growl"]';
 (function($){  
   $('body').append('<div id="growlContainer" style="position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;pointer-events:none;"></div>')
   $.extend({
