@@ -40,8 +40,7 @@ var growls = '[class^="growl"]';
       this.html.className = 'growl' + this.id + ' alert alert-' + _.type + ' ' + _.class
       var xHtml = '<a style="pointer-events: auto;" class="close" data-dismiss="alert" href="#">&times;</a>'
       $(this.html).html( 
-        (_.delay == 0 ? xHtml : '') 
-        + _.fTitle + ' ' + _.text
+        xHtml + _.fTitle + ' ' + _.text
       )
 
       // APPEND ALERT TO CONTAINER
