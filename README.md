@@ -3,7 +3,18 @@ tinygrowl
 
 <a href="http://codepen.io/ajkochanowicz/pen/bLBfr">Demo</a>
 
-A very small ( **~0.7kb** minified) js file for creating simple growl messages in Bootstrap.
+A very small ( **~0.7kb** minified) js file for creating simple growl messages in Bootstrap. Look how small it is!
+    
+    var growls='[class^="growl"]';(function($){$("body").append('<div id="growlContainer" style="z-index:2000;position:fixed;width:250px;top:20px;right:20px;bottom:0;overflow:auto;pointer-events:none;"></div>');
+    $.extend({growl:function(options){var defaults={delay:0,type:"warning",container:"#growlContainer",text:"","class":""};var _=$.extend(defaults,options);_.fTitle=_.title?"<strong>"+_.title+"</strong>":"";
+    this.id=Math.floor(Math.random()*1e3);this.html=document.createElement("div");this.html.className="growl"+this.id+" alert alert-"+_.type+" "+_.class;
+    var xHtml='<a style="pointer-events: auto;" class="close" data-dismiss="alert" href="#">&times;</a>';$(this.html).html(xHtml+_.fTitle+" "+_.text);$(_.container).prepend(this.html);
+    if(_.delay>0){var fn=function(delay,id){setTimeout(function(){$(".growl"+id).fadeOut()},delay)}(_.delay,this.id)}}})})(jQuery);
+
+Seriously, you won't believe me. I'll tell you, but you'll say "Stop telling lies, you liar. Why do you lie?"
+And I'll say, "no I'm telling the--"
+"--No, you're a liar and a crook saying such things. Bah."
+But you didn't listen. You never, ever listen.
 
 Install
 =======
