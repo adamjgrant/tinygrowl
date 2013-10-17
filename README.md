@@ -12,9 +12,12 @@ A very small ( **~0.7kb** minified) js file for creating simple growl messages i
     if(_.delay>0){var fn=function(delay,id){setTimeout(function(){$(".growl"+id).fadeOut()},delay)}(_.delay,this.id)}}})})(jQuery);
 
 Seriously, you won't believe me. I'll tell you, but you'll say "Stop telling lies, you liar. Why do you lie?"
+
 And I'll say, "no I'm telling the--"
+
 "--No, you're a liar and a crook saying such things. Bah."
-But you didn't listen. You never, ever listen.
+
+But you didn't listen. Jamie was right. You never, ever listen.
 
 Install
 =======
