@@ -37,7 +37,14 @@ Usage
 Create a growl message
 ----------------------
 
+Javascript
+
 ``$.growl({ text: 'Hello world!' })``
+
+Coffeescript
+
+    $.growl
+        text: 'Hello world
 
 Optional parameters
 -------------------
