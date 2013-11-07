@@ -90,6 +90,34 @@ Now we call ``$.growl`` and specify the ``container`` attribute. Remember to for
         , container: '.customContainer'
       })
     })
+    
+Adding additional classes
+-------------------------
+
+Adding a class to your growl is a great way to destroy it after a certain event has ocurred, or to give it its own styling.
+
+    $('a#custom').click(function() {
+      $.growl({
+        title: 'Saving your document'
+        , class: 'saving-document'
+      })
+    })
+    
+In this scenario, I want the growl to stay visible until the document has been saved. Now I'll destroy it.
+
+    docFunctions.save = function() {
+      // ...
+      return $('.saving-document').fadeOut()
+    }
+    
+You can also use multiple classes the same way you would in regular html.
+
+    $('a#custom').click(function() {
+      $.growl({
+        title: 'Saving your document'
+        , class: 'saving-document green'
+      })
+    })
 
 Use HTML
 --------
